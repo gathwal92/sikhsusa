@@ -1,0 +1,21 @@
+section.news-section {
+
+    .section-content {
+        > .row {
+            margin-bottom: 30px;
+        }
+        .news-title {
+            font-size: 27px;
+            font-weight: 400;
+            margin-bottom: 7px;
+        }
+        .news-date {
+        }
+        .news-thumbnail {
+            margin-bottom: 15px;
+        }
+        .news-description {
+
+        }
+    }
+}

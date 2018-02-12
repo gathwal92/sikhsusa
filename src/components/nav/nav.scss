@@ -1,0 +1,181 @@
+@import '../../vars.scss';
+
+.navbar {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 12px;
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    height: $nav-bar-height;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    .container {
+        height: 100%;
+        max-width: 1140px !important;
+    }
+
+    .navbar-brand {
+        height: 100%;
+        padding: 15px 15px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .navbar-toggler {
+        font-size: 24px;
+        color: $primary-color;
+        border: none;
+        height: 52px;
+        outline: 0;
+
+        &:hover, &:focus {
+            background: none;
+        }
+    }
+
+    ul.navbar-nav {
+
+        li {
+            a {
+                .line {
+                    height: 1px;
+                    display: block;
+                    width: 0;
+                    margin-top: 4px;
+                    margin-left: 50%;
+                    background: $primary-color;
+                }
+
+
+            }
+        }
+
+        > li {
+
+            > a {
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: $primary-color;
+                font-weight: 400;
+
+                &:hover, &:focus, &:focus:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        > li.active {
+
+            > a {
+                color: $primary-color !important;
+                background-color: transparent;
+
+                &:focus {
+                    color: $primary-color !important;
+                    background-color: transparent;
+                }
+
+                &:hover, &:focus:hover {
+                    background-color: transparent;
+                }
+
+                .line {
+                    width: 97%;
+                    margin-left: -1px;
+                }
+            }
+        }
+
+        li.nav-donate-item {
+            padding: 31px 15px;
+
+            a {
+                color: white;
+                padding: 8px 20px;
+                margin: 0px;
+                background-color: $primary-color;
+
+                &:hover, &:focus, &:active {
+                    color: white;
+                    background-color: darken($primary-color, 5%);
+                    outline: 0 none;
+                }
+            }
+        }
+    }
+}
+
+
+@media (pointer: fine) {
+    .navbar ul li.hover a:hover .line {
+        width: 97%;
+        margin-left: -1px;
+    }
+}
+
+.navbar-fixed-top .navbar-collapse {
+    max-height: 347px;
+}
+
+
+
+@media (min-width: 768px) {
+
+    .navbar {
+
+        ul.navbar-nav {
+
+            > li {
+                > a {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar {
+        background-color: white;
+        height: $nav-bar-height-mobile;
+
+        .navbar-brand {
+            padding: 0px;
+        }
+
+        .navbar-collapse {
+            background-color: #f3f3f3;
+            border-width: 0 0 1px;
+            border-style: solid;
+            border-color: #e7e7e7;
+        }
+
+        ul.navbar-nav {
+
+            li.nav-donate-item {
+                padding: 0px;
+
+                a {
+                    padding: 13px 18px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 958px) {
+    .navbar {
+        ul.navbar-nav {
+            li:nth-child(-n+5) {
+                display: none;
+            }
+        }
+    }
+}

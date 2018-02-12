@@ -1,0 +1,27 @@
+section.about-section {
+
+    .section-content {
+
+        img.sikhusa-logo {
+            height: 80px;
+        }
+
+        .sikhusa-description {
+            font-size: 15px;
+            padding-top: 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    section.about-section {
+
+        .section-content {
+
+            img.sikhusa-logo {
+                height: 40px;
+            }
+        }
+    }
+}

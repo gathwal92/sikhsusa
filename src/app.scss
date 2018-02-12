@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700');
+@font-face {
+    font-family: Barkentina;
+    src: url("../public/fonts/Barkentina.otf") format("opentype");
+}
+
+@import 'vars.scss';
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'Montserrat', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 200;
+    font-size: 18px;
+    color: $text-color;
+}
+
+a {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+    color: $secondary-color;
+
+    &:link {
+        color: $secondary-color;
+    }
+
+    &:visited {
+        color: $secondary-color;
+    }
+
+    &:hover, &:focus {
+        color: lighten($secondary-color, 10%);
+    }
+
+    &:active {
+        color: darken($secondary-color, 10%);
+    }
+}
+
+hr {
+    max-width: 100px;
+    margin: 25px auto 0;
+    border-width: 1px;
+    border-color: rgba(34, 34, 34, 0.1);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    color: white !important;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 0px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        color: white !important;
+        background-color: darken($primary-color, 5%);
+        outline: 0 none;
+        cursor: pointer;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+section {
+    padding: 50px 20px;
+
+    h2 {
+        font-family: 'Barkentina', 'Helvetica', 'Arial', 'sans-serif';
+        font-size: 36px;
+        font-weight: 400;
+        color: $secondary-color;
+        margin: 0px;
+    }
+
+    .section-content {
+        padding: 20px 0;
+    }
+}
+
+.divider {
+    color: $primary-color;
+    width: 350px;
+    font-size: 22px;
+    margin: 0 auto;
+
+    &:before {
+        float: left;
+    }
+    &:after {
+        float: right;
+    }
+    &:before, &:after {
+        display: block;
+        width: 43%;
+        content: " ";
+        margin-top: 18px;
+        border: 2px solid $primary-color;
+    }
+}
+
+.section-anchor {
+    display: block;
+    height: $nav-bar-height; /*same height as header*/
+    margin-top: -$nav-bar-height; /*same height as header*/
+    visibility: hidden;
+}
+
+.bg-primary {
+    background: #ffffff;
+
+    h3 {
+        color: black;
+    }
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+.css3Animate {
+    -webkit-transition: all .3s ease-in-out .001s;
+    -moz-transform: all .3s ease-in-out .001s;
+    transition: all .3s ease-in-out .001s;
+}
+
+@media (max-width: 767px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .section-anchor {
+        display: block;
+        height: $nav-bar-height-mobile; /*same height as header*/
+        margin-top: -$nav-bar-height-mobile; /*same height as header*/
+        visibility: hidden;
+    }
+
+    .vertical-align {
+        display: block;
+    }
+
+    .divider {
+        width: 250px;
+        font-size: 20px;
+    }
+}

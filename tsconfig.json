@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./out-tsc",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "target": "es5",
+        "jsx": "react",
+        "typeRoots": [
+            "node_modules/@types"
+        ],
+        "lib": [
+            "es2016",
+            "dom"
+        ]
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

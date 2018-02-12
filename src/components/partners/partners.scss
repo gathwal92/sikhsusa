@@ -1,0 +1,37 @@
+section.partners-section {
+
+    .section-content {
+
+        img {
+            margin: 10px 20px;
+        }
+
+        .float-right {
+            float: right;
+        }
+        .float-left {
+            float: left;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    section.partners-section {
+
+        .section-content {
+
+            img {
+                margin: 0 auto;
+                padding-bottom: 20px;
+            }
+
+            .float-right {
+                float: none;
+            }
+            .float-left {
+                float: none;
+            }
+        }
+    }
+}

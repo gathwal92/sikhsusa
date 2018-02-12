@@ -1,0 +1,22 @@
+@import '../../vars.scss';
+
+.donate-section-container {
+    width: 100%;
+    height: auto;
+    padding-top: $nav-bar-height;
+}
+
+section.donate-section {
+    padding: 40px 0px;
+}
+
+@media (max-width: 767px) {
+
+    .donate-section-container {
+        padding-top: $nav-bar-height-mobile;
+    }
+
+    section.donate-section {
+        padding: 30px 0px;
+    }
+}

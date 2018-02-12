@@ -1,0 +1,73 @@
+@import '../../vars.scss';
+
+section.join-section {
+    background-color: $primary-color;
+    color: white;
+
+    h2 {
+        color: white;
+    }
+
+    .section-content {
+
+        .subscribe-form {
+            margin-top: 25px;
+
+            .input-container {
+                display: inline-block;
+                width: 500px;
+                background-color: rgba(255, 255, 255, 0.4);
+
+                input {
+                    border: none;
+                    background: none;
+                    outline: none;
+                    color: white;
+                    padding: 12px 15px 13px 15px;
+                    width: 100%;
+
+                    &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        color:    white;;
+                    }
+                    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                    color:    white;
+                    opacity:  1;
+                    }
+                    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                    color:    white;
+                    opacity:  1;
+                    }
+                    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color:    white;
+                    }
+                    &::-ms-input-placeholder { /* Microsoft Edge */
+                    color:    white;
+                    }
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 16px 15px 14px 15px;
+                background-color: #A03D3D;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    section.join-section {
+
+        .section-content {
+
+            .subscribe-form {
+
+                .input-container {
+                    display: block;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../vars.scss';
+
+.sikhspac-section-container {
+    width: 100%;
+    height: auto;
+    padding-top: $nav-bar-height;
+    font-size: 14px;
+}
+
+section.sikhspac-section {
+    padding: 40px 0px;
+
+    img.sikhpac-logo {
+        height: 80px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .sikhspac-section-container {
+        padding-top: $nav-bar-height-mobile;
+    }
+
+    section.sikhspac-section {
+        padding: 30px 0px;
+    }
+}
